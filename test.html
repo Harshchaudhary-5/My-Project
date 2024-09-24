@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative and Static Positioning</title>
+    <style>
+        /* Basic styling for body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Styling for the container to organize elements */
+        .container {
+            margin-bottom: 50px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 2px solid #ccc;
+        }
+
+        /* Static positioning (this is default for all elements) */
+        .static-box {
+            width: 200px;
+            padding: 20px;
+            background-color: lightblue;
+            border: 2px solid blue;
+            margin-bottom: 20px;
+        }
+
+        /* Relative positioning (moves relative to its normal position) */
+        .relative-box {
+            position: relative;
+            top: 20px;
+            /* Moves 20px down from its normal position */
+            left: 30px;
+            /* Moves 30px to the right from its normal position */
+            width: 200px;
+            padding: 20px;
+            background-color: lightcoral;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Container for static positioning example -->
+    <div class="container">
+        <h2>Static Positioning Example</h2>
+        <p>The box below is using <strong>static positioning</strong>, which is the default positioning for HTML
+            elements.</p>
+        <div class="static-box">
+            Static Positioning Box
+        </div>
+    </div>
+
+    <!-- Container for relative positioning example -->
+    <div class="container">
+        <h2>Relative Positioning Example</h2>
+        <p>The box below is using <strong>relative positioning</strong>. It moves relative to its normal position by
+            20px down and 30px to the right.</p>
+        <div class="relative-box">
+            Relative Positioning Box
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
