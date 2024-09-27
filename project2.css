@@ -2,6 +2,7 @@ body {
     background-color: white;
 }
 
+
 header {
     background-color: green;
     color: white;
@@ -42,6 +43,29 @@ h2 {
     border-radius: 10px;
 }
 
+@keyframes changing {
+    0% {
+        background-color: green;
+    }
+
+    25% {
+        background-color: blanchedalmond;
+    }
+
+    50% {
+        background-color: red;
+    }
+
+    75% {
+        background-color: rgb(5, 128, 237);
+    }
+
+    100% {
+        background-color: green;
+    }
+
+}
+
 button {
     width: 25%;
     padding: 10px;
@@ -52,7 +76,9 @@ button {
     font-size: 16px;
     margin-left: 530px;
     cursor: pointer;
-
+    animation-name: changing;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
 
 #ua {

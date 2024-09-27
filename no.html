@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes movingRight {
+            0% {
+                transform: translateX(0px);
+            }
+
+            100% {
+                transform: translateX(300px);
+            }
+        }
+
+        .bx {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: relative;
+            animation-name: movingRight;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bx"></div>
+</body>
+
+</html>

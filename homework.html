@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+    <style>
+        body {
+            background-color: white;
+
+        }
+
+
+
+
+
+        @keyframes outerColorChange {
+            0% {
+                background-color: #4CAF50;
+
+            }
+
+            25% {
+                background-color: #2196F3;
+
+            }
+
+            50% {
+                background-color: #4CAF50;
+
+            }
+
+            75% {
+                background-color: #FF9800;
+
+            }
+
+            100% {
+                background-color: #4CAF50;
+
+            }
+        }
+
+
+        @keyframes innerColorChange {
+            0% {
+                background-color: #FF5722;
+
+            }
+
+            25% {
+                background-color: #9C27B0;
+
+            }
+
+            50% {
+                background-color: #FF5722;
+
+            }
+
+            75% {
+                background-color: #00BCD4;
+
+            }
+
+            100% {
+                background-color: #FF5722;
+
+            }
+        }
+
+        .outerbox {
+            width: 300px;
+            height: 300px;
+            background-color: #4CAF50;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: outerColorChange 6s infinite;
+        }
+
+
+        .innerbox {
+            width: 150px;
+            height: 150px;
+            background-color: #FF5722;
+            border-radius: 10px;
+            animation-name: innerColorChange;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="outerbox">
+            <div class="innerbox"></div>
+        </div>
+    </div>
+</body>
+
+</html>
