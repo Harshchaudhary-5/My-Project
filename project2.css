@@ -4,10 +4,12 @@ body {
 
 
 header {
-    background-color: green;
+    background-color: white;
     color: white;
     text-align: center;
     padding: 20px;
+    width: 1380px;
+    height: 200px;
 }
 
 h1 {
@@ -20,7 +22,7 @@ h1 {
 
 
 h2 {
-    color: green;
+    color: white;
     text-align: center;
 }
 
@@ -38,9 +40,14 @@ h2 {
 
 .product img {
     width: 350px;
-    height: 350px;
+    height: 280px;
     border: 2px solid green;
     border-radius: 10px;
+}
+
+.opo {
+    width: 1380px;
+    height: 200px;
 }
 
 @keyframes changing {
@@ -74,11 +81,12 @@ button {
     border-radius: 25px;
     color: #fff;
     font-size: 16px;
-    margin-left: 530px;
+    margin-left: 510px;
     cursor: pointer;
     animation-name: changing;
     animation-duration: 8s;
     animation-iteration-count: infinite;
+    margin-bottom: 5px;
 }
 
 #ua {
@@ -90,12 +98,15 @@ button {
 footer {
     background-color: green;
     color: white;
-    text-align: center;
     padding: 10px;
-    position: fixed;
     bottom: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+
 }
+
+
 
 .form-container {
     background-color: #222;
@@ -106,11 +117,15 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+ul {
+    list-style: none;
+}
 
 h2 {
     text-align: center;
     margin-bottom: 20px;
 }
+
 
 
 
@@ -139,9 +154,63 @@ textarea {
 
 }
 
+.box1 {
+    width: 300px;
+    height: 100px;
+    margin-left: 18px;
+    background-color: #3b9531;
+    border-radius: 10px;
+    color: white;
+}
+
+.box2 {
+    width: 300px;
+    height: 100px;
+    margin-left: 18px;
+    background-color: #0f5fa6;
+    border-radius: 10px;
+    color: white;
+}
+
 
 
 
 .name-container {
     display: flex;
+}
+
+.nav {
+    height: 30px;
+    width: 1390;
+    background-color: green;
+    gap: 10px;
+    color: white;
+    display: flex;
+    padding: 20px;
+}
+
+.pop {
+    display: flex;
+    gap: 50px;
+}
+
+.ins {
+    justify-content: 0;
+    padding: 60px;
+}
+
+.foo {
+    justify-content: center;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input[type="text"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+    font-size: 1em;
 }
