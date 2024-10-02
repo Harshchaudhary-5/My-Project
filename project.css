@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar .logo a {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+
+
+
+
+.navbar .cta a {
+    padding: 10px 20px;
+    background-color: #00c853;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.navbar .cta a:hover {
+    background-color: #00b347;
+}
+
+.hero {
+    background-color: #dcedc8;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    padding: 10px 25px;
+    background-color: #00c853;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #00b347;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 250px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #666;
+}
+
+/* Top Destinations Section */
+.destinations {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: lightblue;
+}
+
+.destinations h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.destinations-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destination {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.destination img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.destination h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.destination p {
+    color: #666;
+}
+
+.footer {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.foo {
+    text-align: center;
+    background-color: green;
+    width: 100%;
+    height: 80px;
+    padding-top: 30px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.top-flight-routes {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.top-flight-routes h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.routes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    justify-items: center;
+}
+
+
+.route {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+.route img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+
+.route-info {
+    text-align: left;
+}
+
+.city-route {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.iata-code {
+    color: #007BFF;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+
+.route:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+    .routes-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media (max-width: 480px) {
+    .routes-grid {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+.form-container {
+    background-color: #222;
+    color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    width: 400px;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    background-color: #f4f4f4;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: lightgreen;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+
+.name-container {
+    display: flex;
+}

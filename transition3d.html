@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contanier {
+            perspective: 600px;
+        }
+
+        .box-3d {
+            width: 400px;
+            height: 200px;
+            margin: 50px;
+            background-color: red;
+            transition: transform 0.5s;
+        }
+
+        .rotateX:hover {
+            transform: rotateX(45deg);
+        }
+
+        .rotateY:hover {
+            transform: rotateY(45deg);
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: silver;
+            margin: 50px;
+            transition-duration: 1.5s;
+        }
+
+        .rotate:hover {
+            transform: rotate(180deg);
+        }
+
+        .scale:hover {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contanier">
+        <div class="box-3d rotateX">rotate X</div>
+        <div class="box-3d rotateY">rotate Y</div>
+    </div>
+    <div class="box rotate">rotate</div>
+    <div class="box scale">scale</div>
+</body>
+
+</html>

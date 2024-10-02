@@ -1,3 +1,4 @@
+/* css page */
 body {
     background-color: white;
 }
@@ -213,4 +214,97 @@ textarea {
     border-radius: 3px 0 0 3px;
     outline: none;
     font-size: 1em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Section Styling */
+.top-flight-routes {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.top-flight-routes h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Grid Container for Routes */
+.routes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 20px;
+    /* Space between grid items */
+    justify-items: center;
+}
+
+/* Route Item Styling */
+.route {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Image Styling */
+.route img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+/* Route Info Styling */
+.route-info {
+    text-align: left;
+}
+
+.city-route {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.iata-code {
+    color: #007BFF;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Hover Effect */
+.route:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .routes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .routes-grid {
+        grid-template-columns: 1fr;
+        /* 1 column for small screens */
+    }
 }
